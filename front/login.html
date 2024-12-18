@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div class="barraRosa">
+        <h1 id="titulo_barrarosa">
+          <span class="bold">FRETE GRÁTIS</span> PARA TODO BRASIL!
+        </h1>
+      </div>
+      
+      <style>
+      
+      .bold {
+          font-weight: bold !important; /* Força o bold */
+          font-family: Fontspring_adicional2; /* Usa uma fonte padrão */
+      }
+      
+      #titulo_barrarosa {
+          font-size: 10px;
+          font-family: Fontspring_adicional;
+      }
+      </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet" />
+    
+</head>
+<body class="fundo_telaprincipal">
+    <header>
+        <!-- barra de navegação -->
+        <div class="nav_bar">
+            <nav>
+                <div class="logo">
+                    <img src="./imagens/LOGOTIPO.png" alt="Logo da Loja" />
+                </div>
+                <ul class="lista_navegacao">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="products.html">Produtos</a></li>
+                </ul>
+                <div class="search-cart">
+                    <!-- Barra de Pesquisa -->
+                    <div class="search-container">
+                        <form action="#" method="get">
+                            <div class="search-wrapper">
+                                <i class="fas fa-search"></i> <!-- Ícone da lupa -->
+                                <input type="text" id="search" name="search" placeholder="TÊNIS" />
+                            </div>
+                        </form>
+                    </div>
+    
+                    <!-- Carrinho -->
+                    <div class="carrinho_nav_bar">
+                       <!-- Carrinho -->
+                       <a href="checkout.html" class="link-carrinho">
+                        <i class="bi bi-cart2 carrinho"></i>
+                    </a>
+                
+                    <!-- Contato -->
+                    <a href="contato.html" class="link-contato">
+                        <i class="bi bi-envelope contato"></i>
+                    </a>
+                
+                    <!-- Sobre Nós -->
+                    <a href="sobre.html" class="link-sobre">
+                        <i class="bi bi-info-circle sobre"></i>
+                    </a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>
+    </header> 
+        <div id="espacamento_login">
+            <div class="fazer_login_box">
+                <h1>ENTRAR COM EMAIL E SENHA</h1>
+                <form id="loginForm">
+                    <div class="texto_login">
+                        <label>Email:</label>
+                        <input type="email" id="loginEmail" placeholder="" required>
+                    </div>
+                    <div class="texto_login">
+                        <label>Senha:</label>
+                        <input type="password" id="loginSenha" placeholder="" required>
+                    </div>
+                    <div id="espacamento_botao_login">
+                        <input type="submit" value="ENTRAR">
+                    </div>
+                </form>
+                <div class="nao_tem_conta">
+                    <p class="paragrafo_cadastro">Não tem uma conta? <a href="cadastro.html">Fazer Cadastro</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
